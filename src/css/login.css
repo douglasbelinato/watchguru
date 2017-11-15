@@ -1,0 +1,38 @@
+body {
+	/*
+	vh = viewport height
+	100vh = 100% da altura do viewport 
+	*/
+	min-height: 100vh;
+	background-color: #ccc;
+	background-image: url('https://unsplash.it/g/1280/768?random');
+}
+
+.login-form {
+	margin-top: 50vh;
+	padding: 20px 30px;
+	background-color: rgba(0,0,0, .9); /* 000 para preto e .9 para opacidade de 90% */
+	color: #fff;
+
+	/* 
+	Traduz a posição vertical do elemento para a metade da tela de acordo com 
+	a altura (heigth) que o elemento tiver.
+
+	Foi feito dessa forma porque não importa a altura (height) desse elemento,
+	ele sempre estará atualizado.
+	 */
+	transform: translateY(-50%); 
+}
+
+.login-form h1 {
+	/* com 3 valores, tenho: para cima, para esquerda e direita e o último 
+	valor é para baixo */
+	margin: 0 0 5px;
+}
+
+.login-form h2 {
+	/* com 3 valores, tenho: para cima, para esquerda e direita e o último 
+	valor é para baixo */
+	margin: 0 0 30px;
+	font-size: 1em;
+}
